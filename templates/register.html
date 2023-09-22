@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Register - SB Admin</title>
+        <link href="/static/dashboard/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Student Registration</h3></div>
+                                    <div class="card-body">
+                                        <form action="/submit_studentreg" method="post">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" name="name" id="name" type="text" placeholder="Enter your first name" />
+                                                        <label for="inputFirstName">First name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" name="surname" id="surname" type="text" placeholder="Enter your last name" />
+                                                        <label for="inputLastName">Last name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" name="date_of_birth" id="date_of_birth" type="date" placeholder="DOB" />
+                                                <label for="inputdob">Date of birth</label>
+                                            </div>
+                                            <div class="row mb-3">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="address" name="address" rows="2" cols="30" placeholder="Address"></textarea>
+                                                    </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label>Student Image</label>
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input type="file" name="image" id="image" accept="image/*" placeholder="Student Picture">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Gender: </label>
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        
+                                                        <select id="gen" name="gender">
+                                                            <option value="male">Male</option>
+                                                            <option value="female">Female</option>
+                                                            <option value="numm">Rather Not say</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" name="idnr" id="idnr" type="text" placeholder="000000000000" />
+                                                    <label for="inputIDNum">Identity Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" name="grade" id="grade" type="number" placeholder="Grade Applied" />
+                                                        <label for="inputFirstName">Grade</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" name="parentidnr" id="parentidnr" type="text" placeholder="000000000000" />
+                                                    <label for="inputIDNum">Parent ID Number</label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" name="Parentname" id="Parentname" type="text" placeholder="Enter your first name" />
+                                                        <label for="inputFirstName">Parent First name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" name="Parentsurname" id="Parentsurname" type="text" placeholder="Enter your last name" />
+                                                        <label for="inputLastName">Parent Last name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" name="parentemail" id="parentemail" type="text" placeholder="someone@somewhere.com" />
+                                                    <label for="inputParentEmail">Parent Email Address</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" name="parenttel" id="parenttel" type="text" placeholder="000000000000" />
+                                                    <label for="inputParentTel">Parent Tel Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" name="monthlyfee" id="monthlyfee" type="number" placeholder="Applied Monthly Fee" />
+                                                        <label for="inputLastName">Monthly Fee</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="allergies" name="allergies" rows="2" cols="50" placeholder="Allergies"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4>Emergency Contact</h4>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" name="Ename" id="Ename" type="text" placeholder="Enter Name" />
+                                                        <label for="inputFirstName">Emergency Contact name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" name="Etel" id="Etel" type="text" placeholder="Emergency Number" />
+                                                        <label for="inputLastName">Emergency Contact Number</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="medical" name="emergency-conditions" rows="2" cols="50" placeholder="Emergency Conditions"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="dietres" name="dietres" rows="2" cols="50" placeholder="Dietary restrictions"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="medicine" name="med" rows="2" cols="50" placeholder="Medication"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4>Backstory</h4>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="langs" name="langs" rows="2" cols="50" placeholder="Languages Spoken"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" name="pschool" id="pschool" type="text" placeholder="School Name" />
+                                                        <label for="inputPrevSchool">Previous School</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" name="reasprev" id="reasprev" type="text" placeholder="Reason" />
+                                                        <label for="inputReasonPrevS">Reason for leaving prev. school</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="sports" name="sports" rows="2" cols="50" placeholder="Sports"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <textarea id="snotes" name="snotes" rows="2" cols="50" placeholder="Notes"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 mb-0">
+                                                <div class="d-grid"><button class="btn btn-primary btn-block" type="submit">Submit for review</button></div>
+                                            </div>
+                                        </form>
+                                        <script>
+                                            const imageInput = document.getElementById('image');
+                                            const previewImage = document.getElementById('preview');
+                                        
+                                            imageInput.addEventListener('change', function() {
+                                              if (this.files.length > 0) {
+                                                const file = this.files[0];
+                                                const reader = new FileReader();
+                                        
+                                                reader.onload = function() {
+                                                  previewImage.src = reader.result;
+                                                  previewImage.style.display = 'block';
+                                                };
+                                        
+                                                reader.readAsDataURL(file);
+                                        
+                                                // Resize the image to an ID image size
+                                                const canvas = document.createElement('canvas');
+                                                const ctx = canvas.getContext('2d');
+                                        
+                                                const image = new Image();
+                                                image.onload = function() {
+                                                  canvas.width = 100; // Set the ID image width
+                                                  canvas.height = 100; // Set the ID image height
+                                        
+                                                  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+                                        
+                                                  // Get the resized image data
+                                                  const resizedImageData = canvas.toDataURL();
+                                        
+                                                  // Set the resized image data to the image input
+                                                  imageInput.value = resizedImageData;
+                                                };
+                                        
+                                                image.src = reader.result;
+                                              }
+                                            });
+                                          </script>
+                                    </div>
+                                    <div class="card-footer text-center py-3">
+                                        <div class="small"><a href="/dashboard">Return to Dashboard</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div id="layoutAuthentication_footer">
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; EduCentral</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/static/dashboard/js/scripts.js"></script>
+    </body>
+</html>
